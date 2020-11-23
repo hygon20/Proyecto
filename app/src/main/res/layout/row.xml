@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:padding="16dp"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/icon_user"
+        android:id="@+id/imageIv" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tip_cita"
+        android:text="Tipo de cita: "
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imageIv"
+        android:layout_toEndOf="@id/imageIv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/titleIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="100dp"
+        android:layout_toEndOf="@id/imageIv"
+        android:text="Titulo"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descrip_pro"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleIv"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/imageIv"
+        android:layout_toRightOf="@id/imageIv"
+        android:text="Descripcion del problema: "
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/descripcionV"
+        android:layout_width="159dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/titleIv"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@id/descrip_pro"
+        android:layout_toRightOf="@id/descrip_pro"
+        android:text="descripcion"
+        android:textColor="#a9a9a9"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/medico_dc"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descripcionV"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/imageIv"
+        android:layout_toRightOf="@id/fechaV"
+        android:text="Medico asignado: "
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fechaV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descripcionV"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/medico_dc"
+        android:layout_toRightOf="@id/medico_dc"
+        android:text="descripcion"
+        android:textColor="#a9a9a9"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_fecha"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/medico_dc"
+        android:layout_toEndOf="@id/imageIv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Fecha de la cita: "
+        android:layout_below="@id/medico_dc"
+        />
+
+    <TextView
+        android:id="@+id/fecha_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descripcionV"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@id/text_fecha"
+        android:layout_toRightOf="@id/text_fecha"
+        android:text="descripcion"
+        android:textColor="#a9a9a9"
+        android:textSize="18sp" />
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

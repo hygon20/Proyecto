@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foto1"
+    tools:context=".CitasActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cerclebackgroundyello">
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/ivRegresar"
+                android:layout_width="52dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/regresar" />
+       
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text="¿Agendar una cita?"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/tipo_animal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Tipo de animal"
+                android:textAlignment="center"/>
+
+            <EditText
+            android:id="@+id/raza_animal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="Raza del animal"
+            android:textAlignment="center"/>
+            <Spinner
+                android:id="@+id/sexo_spiner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+            <Spinner
+                android:id="@+id/cita_spiner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+
+            <Spinner
+                android:id="@+id/medico_spiner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+            <EditText
+                android:id="@+id/edad_animal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Edad del animal"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/acompa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Acompañante del animal"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btncalendar"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/cerclebackgroundyello"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_calendar_today_24"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/fechaSeleccionada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Fecha seleccionada"
+                    android:textSize="25dp"
+                    tools:ignore="InvalidId" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnhora"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/cerclebackgroundyello"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_access_time_24"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/horaseleccionda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Hora seleccionada"
+                    android:textSize="25dp"
+                    tools:ignore="InvalidId" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/descripcion"
+                android:layout_width="280dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:hint="Describa el problema "
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/btnAgendar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:background="#4CAF50"
+                android:text="Agendar"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
